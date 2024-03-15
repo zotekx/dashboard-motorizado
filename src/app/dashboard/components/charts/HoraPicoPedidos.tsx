@@ -1,43 +1,39 @@
-
-
-
-
-import { Line } from 'react-chartjs-2';
+import { Line } from "react-chartjs-2";
 
 // Datos y opciones para el gráfico
 const data = {
-  labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo'], // eje X
+  labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo"], // eje X
   datasets: [
     {
-      label: 'Pedidos registrados',
+      label: "Pedidos registrados",
       data: [65, 59, 80, 81, 56], // los puntos en el eje Y
       fill: false,
-      backgroundColor: 'rgb(75, 192, 192)',
-      borderColor: 'rgba(75, 192, 192, 0.2)',
+      backgroundColor: "rgb(75, 192, 192)",
+      borderColor: "rgba(75, 192, 192, 0.4)",
       // Agrega los siguientes para habilitar los puntos (marcadores)
-      pointBorderColor: 'rgb(75, 192, 192)',
-      pointBackgroundColor: '#fff',
+      pointBorderColor: "rgb(75, 192, 192)",
+      pointBackgroundColor: "#fff",
       pointBorderWidth: 2,
       pointHoverRadius: 5,
-      pointHoverBackgroundColor: 'rgb(75, 192, 192)',
-      pointHoverBorderColor: 'rgb(220,220,220)',
+      pointHoverBackgroundColor: "rgb(75, 192, 192)",
+      pointHoverBorderColor: "rgb(220,220,220)",
       pointHoverBorderWidth: 2,
       pointRadius: 5,
       pointHitRadius: 10,
     },
     {
-      label: 'Pedidos asignados',
+      label: "Pedidos asignados",
       data: [35, 29, 78, 31, 36],
-      backgroundColor: 'rgb(75, 192, 192)',
-      borderColor: 'rgba(75, 192, 192, 0.2)',
-      pointBackgroundColor: '#fff',
+      backgroundColor: "rgba(220, 98, 98,0.8)",
+      borderColor: "rgba(233, 54, 54, 0.4)",
+      pointBackgroundColor: "#fff",
       pointBorderWidth: 2,
       pointHoverRadius: 5,
     },
     {
-      label:'Pedidos entregados',
-      data: [ 65, 59, 60, 81, 56],
-    }
+      label: "Pedidos entregados",
+      data: [65, 59, 60, 81, 56],
+    },
   ],
 };
 
@@ -51,7 +47,7 @@ const options = {
   animations: {
     tension: {
       duration: 1000,
-      easing: 'linear' as const,
+      easing: "linear" as const,
       from: 0.3,
       to: 0.1,
       loop: true,
@@ -60,5 +56,5 @@ const options = {
 };
 
 export function HoraPicoChart() {
-  return <Line data={data} options={options} />
+  return <Line data={data} options={options} />;
 }
