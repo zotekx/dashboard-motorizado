@@ -45,7 +45,7 @@ const options = {
       color: "#161D37",
       align: "start" as const,
       font: {
-        size: 18,
+        size: 16,
       },
     },
   },

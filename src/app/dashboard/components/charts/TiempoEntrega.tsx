@@ -31,7 +31,7 @@ export const TiempoEntrega = () => {
         color: "#161D37",
         align: "start" as const,
         font: {
-          size: 17,
+          size: 16,
         },
       },
       legend: {
