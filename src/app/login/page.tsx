@@ -1,7 +1,6 @@
-import { ButtonLogin } from "./components/ButtonLogin";
+import { ButtonLogin } from "../components/ButtonLogin";
 
-export default function Login  ()  {
-
+export default function Login() {
   return (
     <div>
       <div className="min-h-screen bg-gray-100 flex flex-col justify-center sm:py-12">
@@ -25,12 +24,11 @@ export default function Login  ()  {
                 type="text"
                 className="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
               />
-                <ButtonLogin />
+              <ButtonLogin />
             </div>
-
           </div>
         </div>
       </div>
     </div>
   );
-};
+}

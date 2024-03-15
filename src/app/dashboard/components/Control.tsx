@@ -12,7 +12,7 @@ const RangePicker = DatePicker.RangePicker;
 export const Control = () => {
   const router = useRouter();
   const closeSession = () => {
-    router.push("/");
+    router.push("/login");
   };
 
   return (
