@@ -38,6 +38,17 @@ const data = {
 };
 
 const options = {
+  plugins: {
+    title: {
+      text: "PEDIDOS DELIVERY ENTREGADOS",
+      display: true,
+      color: "#161D37",
+      align: "start" as const,
+      font: {
+        size: 18,
+      },
+    },
+  },
   scales: {
     y: {
       beginAtZero: true,

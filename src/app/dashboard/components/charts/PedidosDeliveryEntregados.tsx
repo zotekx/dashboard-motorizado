@@ -25,22 +25,23 @@ export const PedidosDeliveryEntregados = () => {
 
   const options = {
     plugins: {
+      title: {
+        text: "PEDIDOS DELIVERY ENTREGADOS",
+        display: true,
+        color: "#161D37",
+        align: "start" as const,
+        font: {
+          size: 18,
+        },
+      },
       legend: {
         display: false,
         position: "top" as const,
-        align: "start" as const,
+        // align: "start" as const,
         labels: {
           boxWidth: 7,
           usePointStyle: true,
           pointStyle: "circle",
-        },
-        title: {
-          text: "Sales Report",
-          display: true,
-          color: "#000",
-          font: {
-            size: 18,
-          },
         },
       },
     },
@@ -66,5 +67,5 @@ export const PedidosDeliveryEntregados = () => {
     },
   };
 
-  return <Bar data={data} options={options} style={{ height: "36vh" }} />;
+  return <Bar data={data} options={options} style={{}} />;
 };

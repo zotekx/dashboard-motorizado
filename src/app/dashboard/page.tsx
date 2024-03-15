@@ -37,7 +37,7 @@ export default function Dashboard() {
     <div className="h-screen bg-blue-50 flex flex-col">
       <Control />
       <main
-        className="p-6 grid gap-2 flex-1"
+        className="px-6 py-2 grid gap-2 flex-1"
         style={{
           gridTemplateColumns: "2fr 1fr",
           gridTemplateRows: "minmax(300px,44vh) minmax(300px,44vh)",
@@ -74,7 +74,7 @@ const CardChart = ({
 }) => {
   return (
     <div className="w-full bg-white p-4 rounded-md">
-      <h3 className="mb-3 font-bold text-zinc-800">{title}</h3>
+      {/* <h3 className="mb-3 font-bold text-zinc-800">{title}</h3> */}
       {children}
     </div>
   );
